@@ -22,22 +22,24 @@ header {
   height: 5vw;
   background-color: #000;
   vertical-align: middle;
+  position: fixed;
+  width: 100%;
 }
 .logo {
   margin-left: 2vw;
-  width: 5vw;
   height: 5vw;
 
 }
 nav {
   display: flex;
   margin: 0 auto;
-  margin-right: 10vw;
+  margin-right: 2vw;
+  font-size: 1.5vw;
 }
 .logotext {
   color: #fff;
   margin: 0 auto;
-  padding-right: 3vw;
+  padding-right: 6vw;
   margin-top: 1.25vw;
   transition: 0.5s;
 }
@@ -50,15 +52,18 @@ a {
 }
 .up {
   margin: 0 auto;
-  height: 50vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(assets/space2.jpg);
+  height: 40vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(assets/untitled.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+}
+.about {
+  height: 50vw;
+  background-color: #000;
 }
 .news1 {
   height: 35vw;
-  background-image: url(assets/hefest.png);
+  background-image: url(assets/engine.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,13 +83,22 @@ a {
   background-position: center;
 }
 .newstext {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 5vw;
-  font-size: 2.5vw;
+  font-size: 4.5vw;
   color: #fff;
   padding-bottom: 0.5vw;
 }
 .newssubtext {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 2vw;
+  padding: 5vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+}
+.aboutsubtext {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 2vw;
@@ -103,7 +117,7 @@ a {
   margin-left: 5vw;
   border: solid;
   border-color: #fff;
-  border-width: medium;
+  border-width: 0.5vw;
   transition: 0.5s;
 }
 .newsview:hover{
@@ -114,18 +128,21 @@ a {
 }
 .title {
   margin: 0 auto;
-  padding-top: 5vw;
+  padding-top: 30vw;
   font-size: 7vw;
   text-align: center;
-  color: #fff;
+  color: #FFF8E7;
+  font-family: 'Archivo Black', sans-serif;
 }
 .subtitle {
   margin: 0 auto;
-  margin-top: 5vw;
-  font-size: 4vw;
-  text-align: center;
-  color: #fff;
+  font-size: 5vw;
+  padding-top: 1vw;
+  padding-left: 5vw;
+  text-align: left;
+  color: #FFF8E7;
 }
+
 footer {
   height: 15vw;
   background-color: #000;
@@ -160,4 +177,40 @@ footer {
   margin-right: 3vw;
   width: 5vw;
   height: 5vw;
+}
+
+
+@media (max-width: 800px) {
+  .nav {
+    height: 10vw;
+    width: 100%;
+  }
+  header {
+    height: 10vw;
+    width: 100%;
+  }
+  .logotext {
+    font-size: 4vw;
+    padding-top: 0.8vw;
+  }
+  .logo {
+    height: 10vw;
+  }
+  .up {
+    display: flex;
+    padding-top: 0vw;
+    background-position-y: 10vw;
+    height: 66.5vw;
+  }
+  .subtitle {
+    font-size: 10vw;
+    width: 100%;
+  }
+  .aboutsubtext {
+    font-size: 5vw;
+  }
+  .about {
+    height: 100vw;
+    width: 100%;
+  }
 }
